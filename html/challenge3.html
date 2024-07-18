@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>card expanding</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="bg-zinc-950">
+    <!-- *this acts as an another body covering full width and height  -->
+    <!-- * centers the hero section  -->
+    <div class="w-full h-full flex justify-center items-center">
+      <!--* this is the card div -->
+      <div
+        id="card"
+        class="bg-slate-900 rounded-lg flex flex-col items-center p-4 max-w-[300px]"
+      >
+        <!--* the posted image of a cat here -->
+        <img
+          src="https://images.unsplash.com/photo-1500603720222-eb7a1f997356?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+          id="post-image"
+          class="rounded-lg"
+        />
+
+        <!--* this section stores all the user related data like profile name and username -->
+        <div class="flex w-full flex-wrap gap-4 mt-4 *:hover:flex">
+          <!-- *profile image -->
+          <div class="flex gap-4">
+            <img
+              src="https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8a2l0dGVufGVufDB8fDB8fHww"
+              alt=""
+              id="profile-image"
+              class="rounded-2xl object-cover w-12 h-12"
+            />
+
+            <!-- * profile name and username -->
+            <div class="">
+              <h2 id="user-name" class="text-white font-semibold">
+                Abstract Gradient Project
+              </h2>
+              <p id="real-name" class="text-slate-700 text-xs">
+                Lorem ipsum dolor sit.
+              </p>
+            </div>
+          </div>
+          <!-- * shows the likes and comments -->
+          <div class="flex-wrap gap-2 h-6 hidden">
+            <div class="w-12 h-full rounded flex bg-zinc-900">
+              <!--* heart logo -->
+              <img
+                src="https://img.icons8.com/color/48/like--v1.png"
+                alt="like--v1"
+                class="scale-50 w-1/2"
+              />
+              <p class="text-white">23</p>
+            </div>
+            <div class="w-12 h-full rounded flex text-white bg-zinc-900">
+              <img
+                src="https://img.icons8.com/officexs/16/speech-bubble.png"
+                alt="speech-bubble"
+                class="scale-50 w-1/2"
+              />
+              <p>12</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
