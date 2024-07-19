@@ -13,7 +13,7 @@
       <!--* this is the card div -->
       <div
         id="card"
-        class="bg-slate-900 rounded-lg flex flex-col items-center p-4 max-w-[300px]"
+        class="group bg-slate-900 rounded-lg flex flex-col items-center p-4 max-w-[300px]"
       >
         <!--* the posted image of a cat here -->
         <img
@@ -24,7 +24,7 @@
         />
 
         <!--* this section stores all the user related data like profile name and username -->
-        <div class="flex w-full flex-wrap gap-4 mt-4 *:hover:flex">
+        <div class="flex w-full flex-wrap gap-4 mt-4">
           <!-- *profile image -->
           <div class="flex gap-4">
             <img
@@ -45,7 +45,7 @@
             </div>
           </div>
           <!-- * shows the likes and comments -->
-          <div class="flex-wrap gap-2 h-6 hidden">
+          <div class="flex-wrap gap-2 h-6 group-hover:flex hidden">
             <div class="w-12 h-full rounded flex bg-zinc-900">
               <!--* heart logo -->
               <img
