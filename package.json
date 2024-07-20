@@ -2,7 +2,7 @@
   "name": "css challenges",
   "version": "0.0.1",
   "scripts": {
-    "css": "tailwindcss -i ./css/base.css -o ./css/style.css --watch" 
+    "css": "tailwindcss -i ./css/base.css -o ./css/style.css --watch"
   },
   "dependencies": {
     "tailwindcss": "^3.4.6"

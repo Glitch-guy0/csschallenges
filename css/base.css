@@ -2,14 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body{
-    height: 100%;
-    width: 100%;
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
+
+
+/* custom css */
+
+
+
+/* custom animation for changing text (challenge7) */
+.change-content::after {
+  content: "";
+  animation: change-content 5s linear infinite;
+  @apply p-2 rounded bg-purple-500; 
+}
+
+@keyframes change-content {
+  0% {
+    content: "cat";
+  }
+
+  25% {
+    content: "dog";
+  }
+
+  50% {
+    content: "parrot";
+  }
+  75%{
+    content: "tailwind"
+  }
+
+  100% {
+    content: "cat";
+  }
+}
+/* end of custom animation for changing text (challenge7) */
 
